@@ -16,6 +16,15 @@ function App() {
             width="190"
             alt="ILLAM THEDI KALVI IMG"
           />
+          <a
+            href="https://illamthedikalvi.tnschools.gov.in/contactus"
+            className="newLinks"
+          >
+            Contact Us
+          </a>
+          <a href="/" className="newLinks" id="button1">
+            Home
+          </a>
         </div>
       </div>
       <Carousel variant="dark">
@@ -49,7 +58,7 @@ function App() {
       </Carousel>
       <div className="body-content">
         <Row>
-          <Col lg="12" md="12">
+          <Col lg="12" md="6" sm="12">
             <center>
               <Button color="primary" className="button-styles">
                 Programme Guidelines
@@ -58,13 +67,13 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col md="6">
+          <Col lg="6" md="6" sm="12">
             <iframe
               src="https://lmes-content.s3.ap-south-1.amazonaws.com/ANTHEM_SONG_SSA.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4HOG6W4V3VS4CB5U%2F20211117%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20211117T170142Z&X-Amz-Expires=1800&X-Amz-Signature=fcbe04906651db7640eadd3dbc5f0c90cd9128d2cea9f13f7c40363170aaec79&X-Amz-SignedHeaders=host"
               title="frameplaye"
             />
           </Col>
-          <Col md="6">
+          <Col lg="6" md="6" sm="6">
             <b>
               வணக்கம்!
               <br />
@@ -80,7 +89,7 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col lg="12" md="12">
+          <Col lg="12" md="6" sm="6" className="button-new">
             <b>தன்னார்வலர்கள்..</b>
             <br />
             1. வாரத்திற்கு குறைந்தது ஆறு மணி நேரம் குழந்தைகளுடன் செலவிட தயாராக
@@ -94,31 +103,42 @@ function App() {
           </Col>
         </Row>
       </div>
-      <div className="button-styles">
-        <center>
-          <Button>
-            தன்னார்வலர்களுக்கான பதிவேற்று படிவத்தை தொடங்கு / Click here to start
-            the Volunteer Registration Form{" "}
-          </Button>
-        </center>
+      <div>
+        <Row>
+          <Col lg="12">
+            <center>
+              <Button>
+                தன்னார்வலர்களுக்கான பதிவேற்று படிவத்தை தொடங்கு / Click here to
+                start the Volunteer Registration Form{" "}
+              </Button>
+            </center>
+          </Col>
+        </Row>
       </div>
-      <div className="footer-s">
-        <div className="footer-content">
-          <p>illamthedikalvi@gmail.com</p>
-          <sub>
-            ©{year} Department of School Education Tamil Nadu All Rights
-            Reserved
-          </sub>
-          <span>
-            <img
-              className="img-prop"
-              src="https://illamthedikalvi.tnschools.gov.in/assets/logo/logo1.png"
-              width="190"
-              alt="ILLAM THEDI KALVI IMG"
-            ></img>
-          </span>
-        </div>
-      </div>
+      <footer className="footer-s">
+        <Row>
+          <div className="footer-content">
+            <Col lg="4">
+              <p>illamthedikalvi@gmail.com</p>
+              <sub>
+                ©{year} Department of School Education Tamil Nadu All Rights
+                Reserved
+              </sub>
+            </Col>
+            <Col sm="4" lg="4"></Col>
+            <Col sm="4" md="6" lg="4">
+              <span>
+                <img
+                  className="img-prop"
+                  src="https://illamthedikalvi.tnschools.gov.in/assets/logo/logo1.png"
+                  width="190"
+                  alt="ILLAM THEDI KALVI IMG"
+                ></img>
+              </span>
+            </Col>
+          </div>
+        </Row>
+      </footer>
     </div>
   );
 }
